@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>
+            Face Recognition Web App
+        </title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <center>
+
+                <h1 class="btn btn-info heading">Face Recognition Web App</h1>
+                <br><br>
+                <p style="font-size: 15px;">The model is trained for recognizing the face of my father, mother and myself.</p><br>
+                <label>Webcam View</label>
+                <div id="camera"></div>
+                <br><br>
+                <label>Captured Image</label>
+                <div id="result"></div><br><br>
+                <button onclick="click_image()" class="btn btn-warning">Capture Image</button><br><br>
+                <button onclick="check()" class="btn btn-danger">Identify Image</button>
+                <br><br>
+                <p style="font-size: 22px;">Family Member: <span id="result_family_name"></span></p>
+                <p style="font-size: 22px;">Accuracy: <span id="result_family_accuracy"></span></p>
+            </center>
+        </div>
+        
+        
+    </body>
+</html>

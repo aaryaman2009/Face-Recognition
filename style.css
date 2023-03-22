@@ -1,0 +1,19 @@
+.heading{
+    width: 80%;
+    font-size: 30px;
+}
+
+body{
+    background-color: burlywood;
+    color: blue;
+}
+
+#result_family_name, #result_family_accuracy{
+    color: aqua;
+}
+
+#camera{
+    border: 2px dotted greenyellow;
+    height: 300px;
+    width: 350px;
+}
